@@ -20,6 +20,7 @@ import {
 } from "../components/ui/card";
 import { Footer } from "@/components/Footer";
 import IntroCarousel from "@/components/IntroCarousel";
+import Link from "next/link";
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
   const t1 = gsap.timeline();
@@ -171,47 +172,44 @@ export default function Home() {
       className="relative min-h-screen bg-cover bg-center overflow-hidden"
       style={{ backgroundImage: "url('/background.jpg')" }}
     >
-      <NavBar />
-      <main className="relative flex flex-col items-center justify-center min-h-screen text-white ">
-        <Image
-          src="/dollar2.png"
-          width={100}
-          height={100}
-          alt="dollar"
-          className="absolute md:top-0 top-10 2xl:top-[260px] w-[300px] -left-8 md:left-[5px] md:w-[380px]  z-0"
-        />
-        <Image
-          src="/dollar1.png"
-          width={100}
-          height={100}
-          alt="dollar"
-          className="absolute z-0 md:top-[300px] 2xl:top-[550px] md:left-[410px] 2xl:left-[800px] md:w-[220px] right-1 w-[180px] bottom-32"
-        />
-        <div className="relative flex md:flex-row flex-col items-center justify-between z-10 w-full h-full md:gap-0">
-          <div className="flex flex-col items-center w-full md:px-16 ">
-            <div className="w-[100%]">
-              <h1
-                className="text-5xl lg:text-8xl font-light p-4 mb-4 md:text-left text-center"
-                id="intro_main"
-              >
-                Need A Loan Now ?
-              </h1>
-            </div>
-            <div className="w-[100%]">
-              <p
-                className="text-md md:text-xl mb-6 max-w-lg md:text-left text-center w-full p-4"
-                id="intro_content"
-              >
-                Flexible loans designed for you. Achieve your goals with ease
-                and confidence.
-              </p>
-            </div>
-            <div
-              id="intro_button"
-              className="w-[100%] p-4 flex md:justify-start justify-center"
-            >
-              <button
-                className="px-6 py-3 bg-gray-200 text-black rounded-lg shadow-md hover:bg-gray-300 transition"
+      <main className="overflow-hidden" ref={scope}>
+      <section className="sticky top-0 z-10 h-screen overflow-hidden bg-black"
+      id="home">
+        <NavBar/>
+          {/* Single video for both mobile and desktop */}
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover opacity-40 hidden md:block"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src="./bg.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover opacity-40 md:hidden"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src="./bg.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[8vh]" >
+          <p className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6" id="intro_main">
+          <span> A One Stop </span><span className="text-[#F3831C]">Solution</span>  To All Your Event Needs
+          </p>
+            <p className="text-md md:text-lg lg:text-2xl font-semibold text-center text-white md:max-w-[80vw] max-w-[90vw]" id="intro_content">
+            Stack leads with multiple pain points alongside me and make 50k in a month .
+          </p>
+
+          <div id="intro_button">
+
+          <button
+                className="px-6 py-3 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300"
                 onClick={() =>
                   document
                     .getElementById("form_sec")
@@ -220,14 +218,11 @@ export default function Home() {
               >
                 Request Funds Here
               </button>
-            </div>
           </div>
-          <div className="items-center w-full md:px-4 px-2 md:flex hidden">
-            <IntroCarousel />
           </div>
-        </div>
+        </section>
       </main>
-      <div className=" h-1 mt-10 bg-gray-400 shadow-blurred-white"></div>
+
       <section
         className="relative flex flex-col items-center text-white mt-16"
         id="loan_sec"

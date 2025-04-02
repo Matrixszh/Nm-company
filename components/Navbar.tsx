@@ -65,13 +65,13 @@ const NavBar: React.FC = () => {
   }, [isBodyLocked]);
 
   return (
-    <nav className="sticky top-[50px] left-0 right-0 bg-gray-400 z-50 h-[50px] lg:h-[60px] shadow-md w-[90%] lg:w-[50%] rounded-full mx-auto">
+    <nav className="sticky  top-[50px] left-0 right-0 bg-white bg-opacity-45 z-50 h-[50px] lg:h-[60px] shadow-md w-[90%] lg:w-[50%] rounded-full mx-auto border border-2">
       <div className=" h-full flex items-center w-[100%] mx-auto">
         <div className="flex items-center lg:space-x-10 w-full lg:justify-center h-full rounded-full">
           {items.slice(0, 2).map((item, index) => (
             <div key={index} className="hidden lg:block w-full ">
               <button
-                className="text-lg font-medium nav-font relative group w-full rounded-full h-[60px] overflow-hidden"
+                className="text-lg text-white font-regular nav-font relative group w-full rounded-full h-[60px] overflow-hidden"
                 onClick={() => scrollToSection(item.id)}
               >
                 <div className="absolute inset-0 bg-custom-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -82,7 +82,7 @@ const NavBar: React.FC = () => {
           <div className="lg:hidden pl-4">
             <button
               onClick={() => toggleMenu()}
-              className="text-2xl"
+              className="text-2xl text-white "
               aria-label="Toggle menu"
             >
               <GiHamburgerMenu />
@@ -94,16 +94,16 @@ const NavBar: React.FC = () => {
           <Link href="/" passHref>
             <div className="inline-block">
               {/* Logo placeholder */}
-              <Image src="/logo.png" alt="logo" width={300} height={300} />
+              <Image src="/logo.png" alt="logo" width={140} height={140} />
             </div>
           </Link>
         </div>
 
-        <div className="flex items-center space-x-10 w-full justify-center h-full rounded-full">
+        <div className="flex items-center lg:space-x-10 w-full lg:justify-center h-full rounded-full">
           {items.slice(2).map((item, index) => (
             <div key={index} className="hidden lg:block w-full">
               <button
-                className="text-lg font-medium nav-font hover:bg-custom-gradient transition-colors w-full rounded-full h-[60px]"
+                className="text-lg text-white font-medium nav-font hover:bg-custom-gradient transition-colors w-full rounded-full h-[60px]"
                 onClick={() =>
                   scrollToSection(item.id === "form" ? "contact" : item.id)
                 }
@@ -133,7 +133,7 @@ const NavBar: React.FC = () => {
               className="text-2xl"
               aria-label="Close menu"
             >
-              <IoMdClose className="text-green-400 text-4xl" />
+              <IoMdClose className="text-[#F3831C] text-4xl" />
             </button>
           </div>
           <div className="flex flex-col gap-14 p-4">
