@@ -21,6 +21,9 @@ import {
 import { Footer } from "@/components/Footer";
 import IntroCarousel from "@/components/IntroCarousel";
 import Link from "next/link";
+import { AboutUs } from "@/components/AboutUs";
+import ConveyorBelt from "@/components/Conveyerbelt";
+import ServicesSection from "@/components/ServiceSection";
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
   const t1 = gsap.timeline();
@@ -228,36 +231,34 @@ export default function Home() {
         id="loan_sec"
       >
         <div className="mb-4">
-          <span className="px-6 py-2 bg-custom-gradient text-white font-semibold rounded-full">
-            LOANS
+          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
+            HISTORY
           </span>
         </div>
         <h2
-          className="text-3xl md:text-4xl font-semibold mt-6 mb-4 text-center"
+          className="text-3xl md:text-5xl font-regular mt-6 mb-4 text-center"
           id="loan_heading"
         >
-          Type Of Loans We Offer
+          About Us
         </h2>
 
-        <Loans />
+        <AboutUs />
       </section>
 
-      {/* New Section */}
-      <div className=" h-1 bg-gray-400 shadow-blurred-white mt-10"></div>
       <section
         className="relative  flex flex-col items-center text-white my-16 "
         id="speciality_sec"
       >
         <div className="mb-4">
-          <span className="px-6 py-2 bg-custom-gradient text-white font-semibold rounded-full">
-            WHY US
+          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
+            PRIORITIES
           </span>
         </div>
         <h2
-          className="text-3xl md:text-4xl font-semibold mt-6 mb-4 text-center"
+          className="text-3xl md:text-5xl font-regular mt-6 mb-4 text-center"
           id="speciality_heading"
         >
-          What Makes Us Different
+          Why Us
         </h2>
         <p
           className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
@@ -268,94 +269,129 @@ export default function Home() {
         <SpecialityComponent />
       </section>
 
-      <div className=" h-1 bg-gray-400 shadow-blurred-white"></div>
       <section
         className="min-h-screen relative flex flex-col justify-center items-center lg:my-16 lg:mb-[20vh] mb-[40vh] my-16"
         id="process_sec"
       >
-        <div className="mb-4 bg-custom-gradient px-6 py-2 rounded-full">
-          <span className="text-white font-semibold rounded-full ">
-            PROCESS
+        <div className="mb-4">
+          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
+            SERVICES
           </span>
         </div>
         <h2
-          className="text-3xl md:text-4xl font-semibold mt-6 mb-4 text-white text-center"
+          className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
           id="process_heading"
         >
-          Our Process Makes Funding Easy
+          What We Offer
         </h2>
+        <p
+          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
+          id="process_content"
+        >
+          Discover why we're the trusted choice for your funding needs
+        </p>
 
         <ProgressBar />
-        <div></div>
+        
       </section>
-      <div className=" h-1 bg-gray-400 shadow-blurred-white "></div>
+
+
       <section
         className="relative flex flex-col items-center text-white mt-16"
         id="team_sec"
       >
-        <div className="mb-4">
-          <span className="px-6 py-2 bg-custom-gradient text-white font-semibold rounded-full">
-            TEAM
+         <div className="mb-4">
+          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
+            SERVICES
           </span>
         </div>
         <h2
-          className="text-3xl md:text-4xl font-semibold mt-6 mb-4 text-center"
+          className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
           id="team_content"
         >
-          The Dream Team
+          Our Projects
         </h2>
-        <Teams />
+        <p
+          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
+          id="process_content"
+        >
+          Discover why we're the trusted choice for your funding needs
+        </p>
+
+        <ConveyorBelt/>
       </section>
 
-      <div className=" h-1 bg-gray-400 shadow-blurred-white"></div>
+      
       <section
         className="relative  flex flex-col items-center text-white my-16 "
         id="testimonial_sec"
       >
         <div className="mb-4">
-          <span className="px-6 py-2 bg-custom-gradient text-white font-semibold rounded-full">
-            TESTIMONIAL
+          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
+            AWARDS
           </span>
         </div>
         <h2
-          className="text-3xl md:text-4xl font-semibold mt-6 mb-4 text-center"
+          className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
           id="testimonial_heading"
         >
-          What Clients Are Saying
+          Our Awards
         </h2>
         <p
           className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
-          id="testmonial_content"
+          id="testimonial_content"
         >
-          Hear from our satisfied customers who have experienced the benfit of
-          using our services and what their dreams have become
+          Discover why we're the trusted choice for your funding needs
         </p>
-        <Testimonials />
+        <ServicesSection/>
       </section>
-      <div className=" h-1 bg-gray-400 shadow-blurred-white "></div>
+
       <section
         className="relative  flex flex-col items-center text-white mt-16 justify-center"
         id="form_sec"
       >
         <div className="mb-4">
-          <span className="px-6 py-2 bg-custom-gradient text-white font-semibold rounded-full">
-            FORM
+          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
+            CLIENTALE
           </span>
         </div>
         <h2
-          className="text-3xl md:text-4xl font-semibold mt-6 mb-4 text-center"
+          className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
           id="form_heading"
         >
-          Step closer towards success
+          Our Clients
         </h2>
         <p
           className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
           id="form_section"
         >
-          Get started today by filling out our easy application form and take
-          the first step toward your financial solution.
+          Discover why we're the trusted choice for your funding needs
         </p>
-        <Form />
+        {/*<COMPONENT NAME/>*/}
+      </section>
+      
+      <section
+        className="relative  flex flex-col items-center text-white mt-16 justify-center"
+        id="form_sec"
+      >
+        <div className="mb-4">
+          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
+            CLIENTALE
+          </span>
+        </div>
+        <h2
+          className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
+          id="form_heading"
+        >
+          Our Clients
+        </h2>
+        <p
+          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
+          id="form_section"
+        >
+          Discover why we're the trusted choice for your funding needs
+        </p>
+        <LogoSlider />
       </section>
       <Footer />
     </div>

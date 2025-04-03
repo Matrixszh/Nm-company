@@ -18,7 +18,7 @@ export const SpecialityComponent = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full gap-10 py-16">
-      <div className="lg:w-[40vw]  w-[80vw] rounded-full bg-[#999999] flex justify-evenly">
+      <div className="lg:w-[40vw]  w-[80vw] rounded-full bg-white bg-opacity-45 flex justify-evenly">
         {(["Easy", "Trust", "Available"] as const).map((button) => (
           <button
             key={button}
@@ -55,12 +55,12 @@ export const SpecialityComponent = () => {
           </div>
           <div>
             <Image
-              src="/pace.png"
+              src={buttonData[selectedButton].image}
               alt="pic"
               width={300}
               height={300}
               quality={100}
-              className="md:w-[20vw] w-[45vw]"
+              className="md:w-[40vw] w-[80vw] lg:h-[22vw]"
             />
           </div>
         </Card>

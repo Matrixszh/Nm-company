@@ -200,7 +200,7 @@ const ProgressBar = () => {
                         progressLineRefs.current[index] = el;
                       }
                     }}
-                    className="h-40 w-1 bg-gray-600 relative overflow-hidden mx-auto"
+                    className="h-40 w-1 bg-white bg-opacity-45 relative overflow-hidden mx-auto"
                   >
                     <div
                       className="dynamic-progress absolute top-0 left-0 w-full bg-custom-gradient"
@@ -224,10 +224,10 @@ const ProgressBar = () => {
                     : "lg:right-[100px] right-[35px]"
                 }`}
               >
-                <div className="mb-4 text-white ">
+                <div className="mb-4 text-[#F3831C] ">
                   <card.icon className="w-12 h-12 mx-auto " />
                 </div>
-                <Card className="flex bg-gray-600 flex-col items-center justify-center text-center md:min-h-[10vh] min-h-[25vh] ">
+                <Card className="flex bg-white bg-opacity-45 flex-col items-center justify-center text-center md:min-h-[10vh] min-h-[25vh] ">
                   <CardHeader>
                     <CardTitle className="md:text-3xl text-xl mt-0 mb-0 font-medium text-white">
                       {card.title}
@@ -255,10 +255,10 @@ const ProgressBar = () => {
               }}
             >
               <div key={index} className="w-full flex flex-col items-center">
-                <div className="mb-4 text-white ">
+                <div className="mb-4 text-[#F3831C] ">
                   <card.icon className="w-12 h-12 mx-auto " />
                 </div>
-                <Card className="flex bg-gray-600 flex-col items-center justify-between text-center min-h-[30vh] w-[15vw] p-2">
+                <Card className="flex bg-white bg-opacity-45 flex-col items-center justify-between text-center min-h-[30vh] w-[15vw] p-2">
                   <CardHeader className="flex flex-col items-center w-full">
                     <CardTitle className="md:text-3xl text-xl mt-0 mb-2 font-medium text-white">
                       {card.title}
