@@ -11,13 +11,13 @@ import logoImage from "../public/dollar1.png"; // Adjust path as needed
 
 export const Footer = () => {
   return (
-    <footer className="bg-transparent text-white py-8">
-      <div className="h-1 mb-10 bg-gray-400 shadow-blurred-white"></div>
+    <footer className="bg-custom-gradient text-white py-2">
+      
       <div className="flex  flex-col justify-between px-6 gap-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left Section - Contact Information */}
-          <div className="flex flex-col items-center md:items-start gap-1 text-gray-400 mb-6 md:mb-0">
-            <span className="text-lg md:text-xl">money@pacemorby.com</span>
+          <div className="flex flex-col items-center md:items-start gap-1 text-white mb-6 md:mb-0">
+            <span className="text-sm md:text-sm">money@pacemorby.com</span>
           </div>
 
           {/* Center Section - Logo */}
@@ -25,7 +25,7 @@ export const Footer = () => {
             <Image
               src="/logo.png"
               alt="Logo"
-              width={220} // Adjust size as needed
+              width={100} // Adjust size as needed
               height={80}
               priority
             />
@@ -39,7 +39,7 @@ export const Footer = () => {
               rel="noreferrer"
               aria-label="Instagram"
             >
-              <FaInstagram className="text-2xl hover:text-green-600" />
+              <FaInstagram className="text-2xl hover:text-[#F3831C]" />
             </a>
             <a
               href="https://www.facebook.com/groups/creativefinancewithpacemorby"
@@ -47,7 +47,7 @@ export const Footer = () => {
               rel="noreferrer"
               aria-label="Facebook Group"
             >
-              <FaFacebook className="text-2xl hover:text-green-600" />
+              <FaFacebook className="text-2xl hover:text-[#F3831C]" />
             </a>
             <a
               href="https://www.youtube.com/@PaceMorby"
@@ -55,7 +55,7 @@ export const Footer = () => {
               rel="noreferrer"
               aria-label="YouTube"
             >
-              <FaYoutube className="text-2xl hover:text-green-600" />
+              <FaYoutube className="text-2xl hover:text-[#F3831C]" />
             </a>
             <a
               href="https://www.linkedin.com/in/pacejordanmorby/"
@@ -63,7 +63,7 @@ export const Footer = () => {
               rel="noreferrer"
               aria-label="LinkedIn"
             >
-              <FaLinkedin className="text-2xl hover:text-green-600" />
+              <FaLinkedin className="text-2xl hover:text-[#F3831C]" />
             </a>
             <a
               href="https://www.tiktok.com/@pacemorby?_t=8sU4knXn9Gp&_r=1"
@@ -71,12 +71,12 @@ export const Footer = () => {
               rel="noreferrer"
               aria-label="TikTok"
             >
-              <FaTiktok className="text-2xl hover:text-green-600" />
+              <FaTiktok className="text-2xl hover:text-[#F3831C]" />
             </a>
           </div>
         </div>
 
-        <div className="text-center text-gray-400 text-xs">
+        <div className="text-center text-white text-xs">
           © 2024 Creative Funding™. All Rights Reserved.
         </div>
       </div>

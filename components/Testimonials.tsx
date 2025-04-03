@@ -18,7 +18,7 @@ const Testimonials = () => {
       backDescription:
         "I found a distressed property in a prime location, but I lacked the funds for renovation. Creative Funding for help, and they provided me with a Rehab Loan that covered both the purchase and the renovation.",
       badge: "Adam M",
-      image: "/test1.jpg",
+      image: "/img1.jpg",
     },
     {
       title: "DCSR Loan",
@@ -26,7 +26,7 @@ const Testimonials = () => {
       backDescription:
         "I wanted to expand my rental portfolio and needed a reliable financing option. Creative Funding offered me a DSCR Rental Loan, which enabled me to purchase a new rental property. The loan terms were flexible, and the approval process was fast.",
       badge: "Karl T",
-      image: "/test2.jpg",
+      image: "/img2.jpg",
     },
     {
       title: "Rehab Loan",
@@ -34,7 +34,7 @@ const Testimonials = () => {
       backDescription:
         "I purchased an old, run-down property with the vision of revitalizing it and improving the local community. With a Rehab Loan, I was able to finance extensive renovations.",
       badge: "Maria S",
-      image: "/test3.jpg",
+      image: "/img3.jpg",
     },
     {
       title: "Bridge Loan",
@@ -42,7 +42,7 @@ const Testimonials = () => {
       backDescription:
         "When I came across a prime investment opportunity, I knew I had to act fast. However, my capital was tied up in another property that hadn't sold yet. Creative Funding came through with a Bridge Loan that gave me the immediate funds I needed.",
       badge: "Michael W",
-      image: "/test4.jpg",
+      image: "/img1.jpg",
     },
   ];
 
@@ -88,7 +88,7 @@ const Testimonials = () => {
                   <div className="w-full h-48 bg-white/5 backdrop-blur-md flex flex-col rounded-b-lg p-6 justify-between">
                     <div className="space-y-4">
                       <div className="flex gap-4 items-center">
-                        <p className="md:text-xl text-sm px-6 py-1 bg-white text-[#0C5304] rounded-lg">
+                        <p className="md:text-xl text-sm px-6 py-1 bg-white text-[#F3831C] rounded-lg">
                           {card.badge}
                         </p>
                         <p className="md:text-xl text-sm font-bold text-white">
@@ -103,7 +103,7 @@ const Testimonials = () => {
                     </div>
                     <div>
                       <button
-                        className="mt-4 px-6 py-2 bg-green-800 text-white rounded hover:bg-green-700 transition-colors"
+                        className="mt-4 px-6 py-2 bg-[#F3831C] text-white rounded hover:bg-[#ffa857] transition-colors"
                         onClick={() => handleFlip(index)}
                       >
                         More Info
@@ -119,7 +119,7 @@ const Testimonials = () => {
                   <div className="w-full h-full bg-white/30 backdrop-blur-md flex flex-col rounded-lg p-6">
                     <div className="flex-1 space-y-6">
                       <div className="flex gap-4 items-center">
-                        <p className="md:text-5xl text-sm px-6 py-1 bg-white text-[#0C5304] rounded-lg">
+                        <p className="md:text-5xl text-sm px-6 py-1 bg-white text-[#F3831C] rounded-lg">
                           {card.badge}
                         </p>
                       </div>
@@ -130,7 +130,7 @@ const Testimonials = () => {
                       </div>
                     </div>
                     <button
-                      className="px-6 py-2 bg-green-800 text-white rounded hover:bg-green-700 transition-colors"
+                      className="px-6 py-2 bg-[#F3831C] text-white rounded hover:bg-[#ffa857] transition-colors"
                       onClick={() => handleFlip(index)}
                     >
                       Back

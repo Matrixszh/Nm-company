@@ -24,6 +24,7 @@ import Link from "next/link";
 import { AboutUs } from "@/components/AboutUs";
 import ConveyorBelt from "@/components/Conveyerbelt";
 import ServicesSection from "@/components/ServiceSection";
+
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
   const t1 = gsap.timeline();
@@ -219,7 +220,7 @@ export default function Home() {
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
               >
-                Request Funds Here
+                Contact Us
               </button>
           </div>
           </div>
@@ -352,14 +353,14 @@ export default function Home() {
       >
         <div className="mb-4">
           <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
-            CLIENTALE
+            PROOF
           </span>
         </div>
         <h2
           className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
           id="form_heading"
         >
-          Our Clients
+          Testimonials
         </h2>
         <p
           className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
@@ -367,7 +368,7 @@ export default function Home() {
         >
           Discover why we're the trusted choice for your funding needs
         </p>
-        {/*<COMPONENT NAME/>*/}
+        <Testimonials/>
       </section>
       
       <section
