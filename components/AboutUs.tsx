@@ -41,7 +41,7 @@ export const AboutUs = () => {
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
               >
-                Request Funds Here
+                Contact Us
               </button>
       </div>
       <div className="">

@@ -1,11 +1,11 @@
 "use client";
 import Form from "@/components/Form";
 import Testimonials from "@/components/Testimonials";
-import Loans from "../components/Loans";
-import NavBar from "../components/Navbar";
-import ProgressBar from "../components/Progress";
-import { SpecialityComponent } from "../components/SpecialityComponent";
-import Teams from "../components/Team";
+import Loans from "@/components/Loans";
+import NavBar from "@/components/Navbar";
+import ProgressBar from "@/components/Progress";
+import { SpecialityComponent } from "@/components/SpecialityComponent";
+import Teams from "@/components/Team";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
@@ -17,13 +17,15 @@ import {
   CardHeader,
   CardTitle,
   CardContent,
-} from "../components/ui/card";
+} from "@/components/ui/card";
 import { Footer } from "@/components/Footer";
 import IntroCarousel from "@/components/IntroCarousel";
 import Link from "next/link";
 import { AboutUs } from "@/components/AboutUs";
 import ConveyorBelt from "@/components/Conveyerbelt";
 import ServicesSection from "@/components/ServiceSection";
+import Intro from "./Intro";
+import About2 from "./About2";
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -243,59 +245,8 @@ export default function Home() {
           About Us
         </h2>
 
-        <AboutUs />
+        <Intro/>
       </section>
-
-      <section
-        className="relative  flex flex-col items-center text-white my-16 "
-        id="speciality_sec"
-      >
-        <div className="mb-4">
-          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
-            PRIORITIES
-          </span>
-        </div>
-        <h2
-          className="text-3xl md:text-5xl font-regular mt-6 mb-4 text-center"
-          id="speciality_heading"
-        >
-          Why Us
-        </h2>
-        <p
-          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
-          id="speciality_content"
-        >
-          Discover why we're the trusted choice for your funding needs
-        </p>
-        <SpecialityComponent />
-      </section>
-
-      <section
-        className="min-h-screen relative flex flex-col justify-center items-center lg:my-16 lg:mb-[20vh] mb-[40vh] my-16"
-        id="process_sec"
-      >
-        <div className="mb-4">
-          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
-            SERVICES
-          </span>
-        </div>
-        <h2
-          className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
-          id="process_heading"
-        >
-          What We Offer
-        </h2>
-        <p
-          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
-          id="process_content"
-        >
-          Discover why we're the trusted choice for your funding needs
-        </p>
-
-        <ProgressBar />
-        
-      </section>
-
 
       <section
         className="relative flex flex-col items-center text-white mt-11"
@@ -344,7 +295,7 @@ export default function Home() {
         >
           Discover why we're the trusted choice for your funding needs
         </p>
-        <ServicesSection/>
+        <About2/>
       </section>
 
       <section
