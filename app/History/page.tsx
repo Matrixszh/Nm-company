@@ -26,6 +26,7 @@ import ConveyorBelt from "@/components/Conveyerbelt";
 import ServicesSection from "@/components/ServiceSection";
 import Intro from "./Intro";
 import About2 from "./About2";
+import { Collaborations } from "./Collaborations";
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -176,7 +177,7 @@ export default function Home() {
     <div
       ref={scope}
       className="relative min-h-screen bg-cover bg-center overflow-hidden"
-      style={{ backgroundImage: "url('/background.jpg')" }}
+      style={{ backgroundImage: "url('/background.jpg')" }} id="history"
     >
       <main className="overflow-hidden" ref={scope}>
       <section className="sticky top-0 z-10 h-screen overflow-hidden bg-black"
@@ -206,7 +207,7 @@ export default function Home() {
 
           <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[8vh]" >
           <p className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6" id="intro_main">
-          <span> A One Stop </span><span className="text-[#F3831C]">Solution</span>  To All Your Event Needs
+          <span> A One Stop </span><span className="text-[#F3831C]">History</span>  To All Your Event Needs
           </p>
             <p className="text-md md:text-lg lg:text-2xl font-semibold text-center text-white md:max-w-[80vw] max-w-[90vw]" id="intro_content">
             Stack leads with multiple pain points alongside me and make 50k in a month .
@@ -218,7 +219,7 @@ export default function Home() {
                 className="px-6 py-3 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300"
                 onClick={() =>
                   document
-                    .getElementById("form_sec")
+                    .getElementById("history")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
               >
@@ -322,6 +323,31 @@ export default function Home() {
         <Testimonials/>
       </section>
       
+      
+      <section
+        className="relative  flex flex-col items-center text-white mt-16 justify-center"
+        id="form_sec"
+      >
+        <div className="mb-4">
+          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
+            PROOF
+          </span>
+        </div>
+        <h2
+          className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
+          id="form_heading"
+        >
+          Testimonials
+        </h2>
+        <p
+          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
+          id="form_section"
+        >
+          Discover why we're the trusted choice for your funding needs
+        </p>
+        <Collaborations/>
+      </section>
+
       <section
         className="relative  flex flex-col items-center text-white mt-16 justify-center"
         id="form_sec"

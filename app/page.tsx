@@ -24,6 +24,7 @@ import Link from "next/link";
 import { AboutUs } from "@/components/AboutUs";
 import ConveyorBelt from "@/components/Conveyerbelt";
 import ServicesSection from "@/components/ServiceSection";
+import router from "next/router";
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -212,16 +213,11 @@ export default function Home() {
 
           <div id="intro_button">
 
-          <button
-                className="px-6 py-3 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300"
-                onClick={() =>
-                  document
-                    .getElementById("form_sec")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                Contact Us
-              </button>
+          <Link href="/History">
+      <button className="px-6 py-3 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300">
+        Contact Us
+      </button>
+    </Link>
           </div>
           </div>
         </section>

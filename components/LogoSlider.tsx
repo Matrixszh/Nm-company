@@ -21,7 +21,7 @@ const LogoSlider = () => {
 
   return (
     <div>
-      <div className="slider-container overflow-hidden">
+      <div className="slider-container overflow-hidden py-10">
         <div className="slider">
           {[...brands, ...brands, ...brands].map((data, index) => (
             <div
@@ -32,8 +32,8 @@ const LogoSlider = () => {
                 <Image
                   src={data.image}
                   alt={`Brand ${(index % brands.length) + 1}`}
-                  width={200}
-                  height={200}
+                  width={100}
+                  height={100}
                   className="object-contain"
                 />
               </div>

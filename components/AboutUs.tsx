@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import nmlogo from "../public/nmlogo.png";
 import { ProfilePhoto } from "./ProfilePhoto";
+import Link from "next/link";
 export const AboutUs = () => {
   return (
     <div className="flex flex-col-reverse lg:flex-row items-center justify-between px-5 pt-10 lg:px-16 gap-14">
@@ -33,16 +34,11 @@ export const AboutUs = () => {
             the right people in place.
           </span>
         </p>
-        <button
-                className="px-6 py-3 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300"
-                onClick={() =>
-                  document
-                    .getElementById("form_sec")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                Contact Us
-              </button>
+        <Link href="/History">
+      <button className="px-6 py-3 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300">
+        Contact Us
+      </button>
+    </Link>
       </div>
       <div className="">
         <ProfilePhoto />
