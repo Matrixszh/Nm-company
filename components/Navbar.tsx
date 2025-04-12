@@ -5,32 +5,29 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { gsap } from "gsap";
 import Image from "next/image";
+import { useRouter } from 'next/navigation';
+
+
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isBodyLocked, setIsBodyLocked] = useState(false);
   const menuItemsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const router = useRouter();
 
   const items = [
-    { item: "HOME", id: "intro_main" },
-    { item: "PROCESS", id: "process_sec" },
-    { item: "LOANS", id: "loan_sec" },
-    { item: "CONTACT", id: "form_section" },
+    { item: "HOME", href: "/" },
+    { item: "PROCESS", href: "process_sec" },
+    { item: "HISTORY", href: "/History" },
+    { item: "CONTACT", href: "/Form" },
   ];
 
-  const toggleMenu = (targetSectionId?: string) => {
+  const toggleMenu = (href?: string) => {
     setIsMenuOpen((prev) => !prev);
     setIsBodyLocked((prev) => !prev);
 
-    if (targetSectionId) {
-      scrollToSection(targetSectionId);
-    }
-  };
-
-  const scrollToSection = (targetSectionId: string) => {
-    const section = document.getElementById(targetSectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    if (href) {
+      router.push(href);
     }
   };
 
@@ -65,14 +62,14 @@ const NavBar: React.FC = () => {
   }, [isBodyLocked]);
 
   return (
-    <nav className="sticky  top-[50px] left-0 right-0 bg-white bg-opacity-45 z-50 h-[50px] lg:h-[60px] shadow-md w-[90%] lg:w-[50%] rounded-full mx-auto border border-2">
-      <div className=" h-full flex items-center w-[100%] mx-auto">
+    <nav className="sticky top-[50px] left-0 right-0 bg-white bg-opacity-45 z-50 h-[50px] lg:h-[60px] shadow-md w-[90%] lg:w-[50%] rounded-full mx-auto border border-2">
+      <div className="h-full flex items-center w-[100%] mx-auto">
         <div className="flex items-center lg:space-x-10 w-full lg:justify-center h-full rounded-full">
           {items.slice(0, 2).map((item, index) => (
-            <div key={index} className="hidden lg:block w-full ">
+            <div key={index} className="hidden lg:block w-full">
               <button
                 className="text-lg text-white font-regular nav-font relative group w-full rounded-full h-[60px] overflow-hidden"
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => router.push(item.href)}
               >
                 <div className="absolute inset-0 bg-custom-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <span className="relative z-10">{item.item}</span>
@@ -82,7 +79,7 @@ const NavBar: React.FC = () => {
           <div className="lg:hidden pl-4">
             <button
               onClick={() => toggleMenu()}
-              className="text-2xl text-white "
+              className="text-2xl text-white"
               aria-label="Toggle menu"
             >
               <GiHamburgerMenu />
@@ -93,7 +90,6 @@ const NavBar: React.FC = () => {
         <div className="flex-grow flex justify-center mx-4">
           <Link href="/" passHref>
             <div className="inline-block">
-              {/* Logo placeholder */}
               <Image src="/logo.png" alt="logo" width={140} height={140} />
             </div>
           </Link>
@@ -104,9 +100,7 @@ const NavBar: React.FC = () => {
             <div key={index} className="hidden lg:block w-full">
               <button
                 className="text-lg text-white font-medium nav-font hover:bg-custom-gradient transition-colors w-full rounded-full h-[60px]"
-                onClick={() =>
-                  scrollToSection(item.id === "form" ? "contact" : item.id)
-                }
+                onClick={() => router.push(item.href)}
               >
                 {item.item}
               </button>
@@ -114,13 +108,16 @@ const NavBar: React.FC = () => {
           ))}
         </div>
       </div>
-      {/* Mobile version */}
+
+      {/* Mobile overlay */}
       {isMenuOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-60 z-40"
           onClick={() => toggleMenu()}
         ></div>
       )}
+
+      {/* Mobile sidebar */}
       <div
         className={`fixed top-0 right-0 h-full w-64 opacity-90 bg-gray-500 shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
@@ -136,6 +133,7 @@ const NavBar: React.FC = () => {
               <IoMdClose className="text-[#F3831C] text-4xl" />
             </button>
           </div>
+
           <div className="flex flex-col gap-14 p-4">
             {items.map((item, index) => (
               <div className="relative" key={index}>
@@ -147,17 +145,18 @@ const NavBar: React.FC = () => {
                 ></div>
                 <button
                   className="text-left border-gray-400 text-xl text-black border px-4 rounded-xl shadow-lg py-1 font-regular bg-white w-full"
-                  onClick={() => toggleMenu(item.id.toLowerCase())}
+                  onClick={() => toggleMenu(item.href)}
                 >
                   {item.item}
                 </button>
               </div>
             ))}
           </div>
+
           <div className="p-4">
             <button
-              className="w-full bg-custom-gradient border border-gray-300 py-3 rounded-xl text-lg font-regular text-white font-regular hover:border-white hover:bg-gray-600 hover:text-white transition duration-300"
-              onClick={() => toggleMenu("form_sec")}
+              className="w-full bg-custom-gradient border border-gray-300 py-3 rounded-xl text-lg font-regular text-white hover:border-white hover:bg-gray-600 hover:text-white transition duration-300"
+              onClick={() => toggleMenu("/Form")}
             >
               Contact
             </button>
