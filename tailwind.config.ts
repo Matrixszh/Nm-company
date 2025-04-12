@@ -9,6 +9,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        marquee: 'marquee 40s linear infinite',
+        'marquee-reverse': 'marquee-reverse 40s linear infinite',
+        
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-66.666%)' },
+        },
+        'marquee-reverse': {
+          '0%': { transform: 'translateX(-66.666%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -62,8 +77,10 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      
     },
   },
   plugins: [require("tailwindcss-animate")],
 };
+
 export default config;

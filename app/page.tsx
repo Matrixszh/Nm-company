@@ -25,6 +25,7 @@ import { AboutUs } from "@/components/AboutUs";
 import ConveyorBelt from "@/components/Conveyerbelt";
 import ServicesSection from "@/components/ServiceSection";
 import router from "next/router";
+import MarqueeText from "@/components/MarqueeText";
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -267,11 +268,12 @@ export default function Home() {
         </p>
         <SpecialityComponent />
       </section>
-
+      <MarqueeText/>
       <section
         className="min-h-screen relative flex flex-col justify-center items-center lg:my-16 lg:mb-[20vh] mb-[40vh] my-16"
         id="process_sec"
       >
+        
         <div className="mb-4">
           <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
             SERVICES
@@ -289,6 +291,7 @@ export default function Home() {
         >
           Discover why we're the trusted choice for your funding needs
         </p>
+
 
         <ProgressBar />
         

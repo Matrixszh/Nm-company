@@ -36,7 +36,7 @@ export const AboutUs = () => {
         </p>
         <Link href="/History">
       <button className="px-6 py-3 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300">
-        Contact Us
+        Know More
       </button>
     </Link>
       </div>
