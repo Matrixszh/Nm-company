@@ -187,8 +187,9 @@ export default function Home() {
             loop
             muted
             playsInline
+            preload="none"
           >
-            <source src="./bg.mp4" type="video/mp4" />
+            <source src="/bg.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <video
@@ -197,8 +198,9 @@ export default function Home() {
             loop
             muted
             playsInline
+            preload="none"
           >
-            <source src="./bg.mp4" type="video/mp4" />
+            <source src="/bg.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
