@@ -17,7 +17,7 @@ const NavBar: React.FC = () => {
 
   const items = [
     { item: "HOME", href: "/" },
-    { item: "PROCESS", href: "process_sec" },
+    { item: "SERVICES", href: "/#process_sec" },
     { item: "HISTORY", href: "/History" },
     { item: "CONTACT", href: "/Form" },
   ];
