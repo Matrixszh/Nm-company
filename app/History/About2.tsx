@@ -7,6 +7,7 @@ import img1 from "@/public/img1.jpg";
 import img2 from "@/public/img2.jpg";
 import img3 from "@/public/img3.jpg";
 import img4 from "@/public/img1.jpg"; // You might want to replace this if it's a duplicate
+import Link from "next/link";
 
 const About2 = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -86,7 +87,23 @@ const About2 = () => {
               upgrade your kitchen, refresh your bathroom, or expand your living
               space, EliteSpaces is committed to making your vision a reality.
             </p>
+            <div className="mt-6 hidden lg:block">
+  <Link href="/History">
+    <button className="px-6 py-1 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300">
+      Contact Us
+    </button>
+  </Link>
+</div>
+
+
           </motion.div>
+          <div className="mt-6 flex sm:justify-center lg:block lg:hidden">
+  <Link href="/History">
+    <button className="px-6 py-1 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300">
+      Contact Us
+    </button>
+  </Link>
+</div>
         </div>
       </div>
     </section>
