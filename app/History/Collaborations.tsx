@@ -3,7 +3,7 @@ import { data } from "@/data/Collaborations";
 
 export const Collaborations = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-8 w-full px-5">
+    <div className="flex flex-wrap items-center justify-center gap-8 w-full px-5 mt-10">
       {data.map((collab) => (
         <div
           key={collab.id}

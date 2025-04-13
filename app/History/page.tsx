@@ -209,10 +209,10 @@ export default function Home() {
 
           <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[8vh]" >
           <p className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6" id="intro_main">
-          <span> A One Stop </span><span className="text-[#F3831C]">History</span>  To All Your Event Needs
+          <span> A Legacy Of Event </span><span className="text-[#F3831C]">Excellence</span>
           </p>
             <p className="text-md md:text-lg lg:text-2xl font-semibold text-center text-white md:max-w-[80vw] max-w-[90vw]" id="intro_content">
-            Stack leads with multiple pain points alongside me and make 50k in a month .
+            Explore our story, from humble beginnings to becoming a trusted name in event resource supply. 
           </p>
 
           <div id="intro_button">
@@ -236,17 +236,7 @@ export default function Home() {
         className="relative flex flex-col items-center text-white mt-16"
         id="loan_sec"
       >
-        <div className="mb-4">
-          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
-            HISTORY
-          </span>
-        </div>
-        <h2
-          className="text-3xl md:text-5xl font-regular mt-6 mb-4 text-center"
-          id="loan_heading"
-        >
-          About Us
-        </h2>
+       
 
         <Intro/>
       </section>
@@ -257,7 +247,7 @@ export default function Home() {
       >
          <div className="mb-4">
           <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
-            SERVICES
+            GALLERY
           </span>
         </div>
         <h2
@@ -270,7 +260,7 @@ export default function Home() {
           className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
           id="process_content"
         >
-          Discover why we're the trusted choice for your funding needs
+          Explore our gallery of past events, featuring our premium supplies and setups that brought unforgettable experiences to life.
         </p>
 
         <ConveyorBelt/>
@@ -283,48 +273,25 @@ export default function Home() {
       >
         <div className="mb-4">
           <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
-            AWARDS
+            SPECIALITY
           </span>
         </div>
         <h2
           className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
           id="testimonial_heading"
         >
-          Our Awards
+          What We Do
         </h2>
         <p
           className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
           id="testimonial_content"
         >
-          Discover why we're the trusted choice for your funding needs
+          Our goals and the process that makes it happen , efficiency and proficiency in action 
         </p>
         <About2/>
       </section>
 
-      <section
-        className="relative  flex flex-col items-center text-white mt-16 justify-center"
-        id="form_sec"
-      >
-        <div className="mb-4">
-          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
-            PROOF
-          </span>
-        </div>
-        <h2
-          className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
-          id="form_heading"
-        >
-          Testimonials
-        </h2>
-        <p
-          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
-          id="form_section"
-        >
-          Discover why we're the trusted choice for your funding needs
-        </p>
-        <Testimonials/>
-      </section>
-      
+            
       
       <section
         className="relative  flex flex-col items-center text-white mt-16 justify-center"
@@ -332,23 +299,48 @@ export default function Home() {
       >
         <div className="mb-4">
           <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
-            PROOF
+            VIDEOS
           </span>
         </div>
         <h2
           className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
           id="form_heading"
         >
-          Testimonials
+          Event Footage
         </h2>
         <p
           className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
           id="form_section"
         >
-          Discover why we're the trusted choice for your funding needs
+           Watch our event setups come to life through videos showcasing our high-quality resources and seamless execution.
         </p>
         <Collaborations/>
       </section>
+      
+      <section
+        className="relative  flex flex-col items-center text-white mt-16 justify-center"
+        id="form_sec"
+      >
+        <div className="mb-4">
+          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
+            PROOF
+          </span>
+        </div>
+        <h2
+          className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
+          id="form_heading"
+        >
+          Testimonials
+        </h2>
+        <p
+          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
+          id="form_section"
+        >
+          Discover why we're the trusted choice for your supplying needs
+        </p>
+        <Testimonials/>
+      </section>
+
 
       <section
         className="relative  flex flex-col items-center text-white mt-16 justify-center"
@@ -365,12 +357,7 @@ export default function Home() {
         >
           Our Clients
         </h2>
-        <p
-          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
-          id="form_section"
-        >
-          Discover why we're the trusted choice for your funding needs
-        </p>
+
         <LogoSlider />
       </section>
       <Footer />

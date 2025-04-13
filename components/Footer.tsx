@@ -11,7 +11,7 @@ import logoImage from "../public/dollar1.png"; // Adjust path as needed
 
 export const Footer = () => {
   return (
-    <footer className="bg-white bg-opacity-35 px-4 text-white py-2">
+    <footer className="bg-white bg-opacity-50 px-4 text-white py-2">
       
       <div className="flex  flex-col justify-between px-6 gap-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
