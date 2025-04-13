@@ -48,7 +48,7 @@ const AppointmentForm = () => {
   return (
     <>
       <form
-        className="flex flex-col w-[90%] mx-auto space-y-4"
+        className="flex flex-col mt-10 w-[90%] mx-auto space-y-4"
         onSubmit={handleSubmit(onSubmit)}
       >
         <input

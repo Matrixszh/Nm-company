@@ -210,8 +210,8 @@ export default function Home() {
           <p className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6" id="intro_main">
           <span> A One Stop </span><span className="text-[#F3831C]">Solution</span>  To All Your Event Needs
           </p>
-            <p className="text-md md:text-lg lg:text-2xl font-semibold text-center text-white md:max-w-[80vw] max-w-[90vw]" id="intro_content">
-            Stack leads with multiple pain points alongside me and make 50k in a month .
+            <p className="text-md md:text-lg lg:text-2xl font-regular text-center text-white md:max-w-[80vw] max-w-[90vw]" id="intro_content">
+            Discover premium event supplies tailored to your needs. From décor to equipment, we provide top-quality resources to bring your vision to life.
           </p>
 
           <div id="intro_button">
@@ -258,13 +258,13 @@ export default function Home() {
           className="text-3xl md:text-5xl font-regular mt-6 mb-4 text-center"
           id="speciality_heading"
         >
-          Why Us
+          Why Choose Us
         </h2>
         <p
           className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
           id="speciality_content"
         >
-          Discover why we're the trusted choice for your funding needs
+          Reliable, high-quality, and tailored to your needs—discover why event organizers trust us for seamless and stress-free event resource solutions.
         </p>
         <SpecialityComponent />
       </section>
@@ -283,13 +283,13 @@ export default function Home() {
           className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
           id="process_heading"
         >
-          What We Offer
+          Services We Offer
         </h2>
         <p
           className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
           id="process_content"
         >
-          Discover why we're the trusted choice for your funding needs
+          From décor and furniture to lighting and staging, we provide top-tier event resources to bring your vision to life.
         </p>
 
 
@@ -304,7 +304,7 @@ export default function Home() {
       >
          <div className="mb-4">
           <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
-            SERVICES
+            GALLERY
           </span>
         </div>
         <h2
@@ -317,7 +317,7 @@ export default function Home() {
           className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
           id="process_content"
         >
-          Discover why we're the trusted choice for your funding needs
+          Explore our gallery of past events, featuring our premium supplies and setups that brought unforgettable experiences to life.
         </p>
 
         <ConveyorBelt/>
@@ -337,14 +337,14 @@ export default function Home() {
           className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
           id="testimonial_heading"
         >
-          Our Awards
+          Our Acheivements
         </h2>
         <p
           className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
           id="testimonial_content"
         >
-          Discover why we're the trusted choice for your funding needs
-        </p>
+          Celebrating our journey of successful events, satisfied clients, and industry recognition as a trusted event resource provider.       
+       </p>
         <ServicesSection/>
       </section>
 
@@ -367,7 +367,7 @@ export default function Home() {
           className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
           id="form_section"
         >
-          Discover why we're the trusted choice for your funding needs
+          Discover why we're the trusted choice for your Supplying needs
         </p>
         <Testimonials/>
       </section>
@@ -387,12 +387,6 @@ export default function Home() {
         >
           Our Clients
         </h2>
-        <p
-          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
-          id="form_section"
-        >
-          Discover why we're the trusted choice for your funding needs
-        </p>
         <LogoSlider />
       </section>
       <Footer />

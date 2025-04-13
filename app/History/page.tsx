@@ -211,7 +211,7 @@ export default function Home() {
           <p className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6" id="intro_main">
           <span> A Legacy Of Event </span><span className="text-[#F3831C]">Excellence</span>
           </p>
-            <p className="text-md md:text-lg lg:text-2xl font-semibold text-center text-white md:max-w-[80vw] max-w-[90vw]" id="intro_content">
+            <p className="text-md md:text-lg lg:text-2xl font-regular text-center text-white md:max-w-[80vw] max-w-[90vw]" id="intro_content">
             Explore our story, from humble beginnings to becoming a trusted name in event resource supply. 
           </p>
 

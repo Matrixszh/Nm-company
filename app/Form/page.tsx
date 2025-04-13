@@ -206,10 +206,10 @@ export default function Home() {
 
           <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[8vh]" >
           <p className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6" id="intro_main">
-          <span> A One Stop </span><span className="text-[#F3831C]">History</span>  To All Your Event Needs
+          <span> Get In Touch , </span> Let's Make Your <span className="text-[#F3831C]">Event</span>  Happen
           </p>
-            <p className="text-md md:text-lg lg:text-2xl font-semibold text-center text-white md:max-w-[80vw] max-w-[90vw]" id="intro_content">
-            Stack leads with multiple pain points alongside me and make 50k in a month .
+            <p className="text-md md:text-lg lg:text-2xl font-regular text-center text-white md:max-w-[80vw] max-w-[90vw]" id="intro_content">
+            Have questions or need a quote? Reach out to our team for expert advice and customized solutions for your next event.
           </p>
 
           <div id="intro_button">
@@ -240,20 +240,20 @@ export default function Home() {
       >
         <div className="mb-4">
           <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
-            PROOF
+            CONTACT
           </span>
         </div>
         <h2
           className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
           id="form_heading"
         >
-          Form
+          Fill Out The Form
         </h2>
         <p
           className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
           id="form_section"
         >
-          Discover why we're the trusted choice for your funding needs
+          Provide your details, and our team will reach out with the perfect event solutions for you!
         </p>
         <AppointmentForm/>
       </section>
@@ -274,12 +274,6 @@ export default function Home() {
         >
           Our Clients
         </h2>
-        <p
-          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
-          id="form_section"
-        >
-          Discover why we're the trusted choice for your funding needs
-        </p>
         <LogoSlider />
       </section>
       <Footer />
