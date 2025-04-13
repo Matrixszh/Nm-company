@@ -60,7 +60,7 @@ const ServicesSection = () => {
                       onMouseEnter={() => setActiveService(service.name)}
                     >
                       <span
-                        className={`text-lg font-Jost sm:text-xl lg:text-2xl font-semibold relative ${
+                        className={`text-2xl font-Jost sm:text-2xl lg:text-3xl font-semibold relative ${
                           activeService === service.name ? 'text-[#F3831C]' : 'text-white '
                         }`}
                       >
@@ -71,7 +71,7 @@ const ServicesSection = () => {
                           }`}
                         ></span>
                       </span>
-                      <p className="text-gray-200 font-Jost text-sm sm:text-base mt-2">{service.description}</p>
+                      <p className="text-gray-200 font-Jost text-lg sm:text-base mt-2">{service.description}</p>
                     </button>
                   </li>
                 ))}

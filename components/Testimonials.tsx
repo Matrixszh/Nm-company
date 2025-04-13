@@ -88,15 +88,15 @@ const Testimonials = () => {
                   <div className="w-full h-48 bg-white/5 backdrop-blur-md flex flex-col rounded-b-lg p-6 justify-between">
                     <div className="space-y-4">
                       <div className="flex gap-4 items-center">
-                        <p className="md:text-xl text-sm px-6 py-1 bg-white text-[#F3831C] rounded-lg">
+                        <p className="md:text-xl text-lg px-6 py-1 bg-white text-[#F3831C] rounded-lg">
                           {card.badge}
                         </p>
-                        <p className="md:text-xl text-sm font-bold text-white">
+                        <p className="md:text-2xl text-2xl font-bold text-white">
                           {card.title}
                         </p>
                       </div>
                       <div className="h-12">
-                        <p className="md:text-xl text-lg font-bold text-white line-clamp-2">
+                        <p className="md:text-lg text-lg font-normal text-white line-clamp-2">
                           {card.description}
                         </p>
                       </div>
@@ -119,12 +119,12 @@ const Testimonials = () => {
                   <div className="w-full h-full bg-white/30 backdrop-blur-md flex flex-col rounded-lg p-6">
                     <div className="flex-1 space-y-6">
                       <div className="flex gap-4 items-center">
-                        <p className="md:text-5xl text-sm px-6 py-1 bg-white text-[#F3831C] rounded-lg">
+                        <p className="md:text-3xl text-2xl px-6 py-1 bg-white text-[#F3831C] rounded-lg">
                           {card.badge}
                         </p>
                       </div>
                       <div className="mt-4">
-                        <p className="md:text-xl text-base text-white font-normal">
+                        <p className="md:text-lg text-lg text-white font-normal">
                           "{card.backDescription}"
                         </p>
                       </div>

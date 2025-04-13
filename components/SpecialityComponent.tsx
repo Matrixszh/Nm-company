@@ -43,12 +43,12 @@ export const SpecialityComponent = () => {
         <Card className="lg:w-[60vw] w-[80vw] bg-opacity-70 bg-[#999999] flex md:flex-row flex-col lg:justify-between justify-center items-center border-none min-h-[40vh]">
           <div className="lg:w-[60vw] md:w-[50vw] lg:h-full h-[90vw] flex items-center flex-col justify-center">
             <CardHeader>
-              <CardTitle className="md:text-5xl text-3xl text-white text-center">
+              <CardTitle className="md:text-3xl text-2xl text-white text-center">
                 {buttonData[selectedButton].title}
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-white md:text-2xl text-lg text-center">
+              <p className="text-white md:text-lg text-lg text-center">
                 {buttonData[selectedButton].content}
               </p>
             </CardContent>
