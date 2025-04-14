@@ -88,7 +88,7 @@ const About2 = () => {
               space, EliteSpaces is committed to making your vision a reality.
             </p>
             <div className="mt-6 hidden lg:block">
-  <Link href="/History">
+  <Link href="/Form">
     <button className="px-6 py-1 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300">
       Contact Us
     </button>
@@ -98,7 +98,7 @@ const About2 = () => {
 
           </motion.div>
           <div className="mt-6 flex sm:justify-center lg:block lg:hidden">
-  <Link href="/History">
+  <Link href="/Form">
     <button className="px-6 py-1 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300">
       Contact Us
     </button>

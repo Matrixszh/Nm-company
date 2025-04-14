@@ -217,16 +217,12 @@ export default function Home() {
 
           <div id="intro_button">
 
-          <button
-                className="px-6 py-3 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300"
-                onClick={() =>
-                  document
-                    .getElementById("Form")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                Contact Us
-              </button>
+
+          <Link href="/Form">
+      <button className="px-6 py-3 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300">
+        Contact Us
+      </button>
+    </Link>
           </div>
           </div>
         </section>
