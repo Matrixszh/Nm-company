@@ -38,7 +38,7 @@ const Testimonials = () => {
     },
     {
       title: "Bridge Loan",
-      description: "Immediate funding for prime opportunity",
+      description: "Immediate funding ",
       backDescription:
         "When I came across a prime investment opportunity, I knew I had to act fast. However, my capital was tied up in another property that hadn't sold yet. Creative Funding came through with a Bridge Loan that gave me the immediate funds I needed.",
       badge: "Michael W",
