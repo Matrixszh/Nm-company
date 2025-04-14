@@ -50,8 +50,8 @@ const ServicesSection = () => {
             ))}
           </div>
 
-          <div className="bg-white bg-opacity-45 w-full md:w-1/2 flex items-center">
-            <div className="w-full bg-[#000000]/5 p-6 sm:p-8 flex flex-col justify-center">
+          <div className="bg-opacity-30 bg-white  w-full md:w-1/2 flex items-center">
+            <div className="w-full p-6 sm:p-8 flex flex-col justify-center">
               <ul>
                 {services.map((service) => (
                   <li key={service.name} className="mb-6 last:mb-0">
