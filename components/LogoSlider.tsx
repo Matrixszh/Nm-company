@@ -1,6 +1,12 @@
 import { StaticImageData } from "next/image";
 import React from "react";
 import logo from "../public/logo.png";
+import ex1 from "../public/ex1.png";
+import ex2 from "../public/ex2.png";
+import ex3 from "../public/ex3.png";
+import ex4 from "../public/ex2.png";
+import ex5 from "../public/ex5.png";
+
 import Image from "next/image";
 
 const LogoSlider = () => {
@@ -10,13 +16,13 @@ const LogoSlider = () => {
 
   const brands: Brand[] = [
     { image: logo },
-    { image: logo },
-    { image: logo },
-    { image: logo },
-    { image: logo },
-    { image: logo },
-    { image: logo },
-    { image: logo },
+    { image: ex1 },
+    { image: ex2 },
+    { image: ex3 },
+    { image: ex4 },
+    { image: ex5 },
+    { image: ex2 },
+    { image: ex1 },
   ];
 
   return (
