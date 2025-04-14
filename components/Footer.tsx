@@ -17,7 +17,7 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left Section - Contact Information */}
           <div className="flex flex-col items-center md:items-start gap-1 text-white mb-6 md:mb-0">
-            <span className="text-sm md:text-sm">money@pacemorby.com</span>
+            <span className="text-sm md:text-sm">nmcompany@email.com</span>
           </div>
 
           {/* Center Section - Logo */}
@@ -34,7 +34,7 @@ export const Footer = () => {
           {/* Right Section - Social Icons */}
           <div className="flex gap-6 items-center">
             <a
-              href="https://www.instagram.com/pacemorby/"
+              href="https://www.instagram.com/"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
@@ -42,7 +42,7 @@ export const Footer = () => {
               <FaInstagram className="text-2xl hover:text-[#F3831C]" />
             </a>
             <a
-              href="https://www.facebook.com/groups/creativefinancewithpacemorby"
+              href="https://www.facebook.com/"
               target="_blank"
               rel="noreferrer"
               aria-label="Facebook Group"
@@ -50,7 +50,7 @@ export const Footer = () => {
               <FaFacebook className="text-2xl hover:text-[#F3831C]" />
             </a>
             <a
-              href="https://www.youtube.com/@PaceMorby"
+              href="https://www.youtube.com/"
               target="_blank"
               rel="noreferrer"
               aria-label="YouTube"
@@ -58,7 +58,7 @@ export const Footer = () => {
               <FaYoutube className="text-2xl hover:text-[#F3831C]" />
             </a>
             <a
-              href="https://www.linkedin.com/in/pacejordanmorby/"
+              href="https://www.linkedin.com/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
@@ -66,7 +66,7 @@ export const Footer = () => {
               <FaLinkedin className="text-2xl hover:text-[#F3831C]" />
             </a>
             <a
-              href="https://www.tiktok.com/@pacemorby?_t=8sU4knXn9Gp&_r=1"
+              href="https://www.tiktok.com/"
               target="_blank"
               rel="noreferrer"
               aria-label="TikTok"
