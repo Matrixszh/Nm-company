@@ -11,12 +11,12 @@ import logoImage from "../public/dollar1.png"; // Adjust path as needed
 
 export const Footer = () => {
   return (
-    <footer className="bg-white bg-opacity-50 px-4 text-white py-2">
+    <footer className="bg-white bg-opacity-50 px-4 text-black py-2">
       
       <div className="flex  flex-col justify-between px-6 gap-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left Section - Contact Information */}
-          <div className="flex flex-col items-center md:items-start gap-1 text-white mb-6 md:mb-0">
+          <div className="flex flex-col items-center md:items-start gap-1 text-black mb-6 md:mb-0 hover:text-[#F3831C]">
             <span className="text-sm md:text-sm">nmcompany@email.com</span>
           </div>
 
@@ -76,7 +76,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="text-center text-white text-xs">
+        <div className="text-center text-black text-xs">
           © 2024 Creative Funding™. All Rights Reserved.
         </div>
       </div>
