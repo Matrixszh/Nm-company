@@ -10,7 +10,7 @@ export const AboutUs = () => {
         <h1 className="flex gap-2 font-regular text-2xl lg:text-3xl">
           Meet{" "}
           <span className="flex flex-col items-center">
-            <p>Abdullah Ghaffar</p>
+            <p>NM Company</p>
           </span>{" "}
         </h1>
         <p
