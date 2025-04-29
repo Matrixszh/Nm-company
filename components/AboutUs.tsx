@@ -17,21 +17,10 @@ export const AboutUs = () => {
           className="text-lg lg:text-lg lg:pr-14 text-justify text-center  px-2 tracking-tight"
           style={{ lineHeight: "1.85" }}
         >
-          As an accomplished entrepreneur with expertise in leadership and
-          business development, I have played a key role in effectively overseen
-          projects that generated over $20 million in revenue. At this
-          particular stage, my proficient team is dedicated to exploring new
-          markets, uncovering new growth opportunities, and driving strategies
-          to grow and retain our customer base.
+          Crafting Unforgettable Celebrations
+          For over two decades, NM Company has been a cornerstone of Hyderabad’s event industry, evolving from a modest production house into Telangana’s premier event powerhouse with one of the largest inventories in the region.
           <span className="hidden lg:flex lg:pt-4 tracking-tight">
-            My career has been deeply rooted in the service industry, giving me
-            a unique understanding of the diverse needs of individuals. This
-            experience enables me to connect with people effectively and deliver
-            the best possible outcomes for all parties involved. I have coached
-            over 200 students with a 99% success rate, and I now own nine
-            businesses. I attribute the success of these ventures entirely to
-            mastering the right systems, processes, and the importance of having
-            the right people in place.
+          Our legacy is built on trust, creativity, and flawless execution, making us the preferred choice for iconic weddings and grand celebrations
           </span>
         </p>
         <Link href="/History">

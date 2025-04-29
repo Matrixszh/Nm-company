@@ -73,19 +73,11 @@ const About2 = () => {
             className="w-full lg:w-1/3 text-justify"
           >
             <p className="text-white md:text-lg text-justify text-lg font-normal ">
-              At <span className="text-[#F3831C]">EliteSpaces</span>, we
-              specialize in transforming homes through expert kitchen and
-              bathroom renovations, as well as stunning home additions. With a
-              track record of over 100 successful projects, we take pride in
-              creating functional, beautiful spaces tailored to our clients&apos;
-              unique needs and lifestyles.
+              At <span className="text-[#F3831C]">NM Company </span>we stand at an exciting turning point. A new generation of visionary talent—trained under India’s top event maestros like Wizcraft and TWS—has joined our ranks, bringing fresh expertise in luxury décor and bespoke wedding planning. With their bold creativity and our decades of experience, we are redefining celebrations—blending tradition with innovation to craft extraordinary experiences.
             </p>
             <p className="text-white md:text-lg text-justify text-lg font-normal mt-4">
-              From concept to completion, our team of experienced professionals
-              is dedicated to delivering top-quality craftsmanship and
-              exceptional service on every project. Whether you&apos;re looking to
-              upgrade your kitchen, refresh your bathroom, or expand your living
-              space, EliteSpaces is committed to making your vision a reality.
+            At NM Company, we don’t just organize events—we create legacies. Whether it’s a dream wedding or a high-profile celebration, we bring unmatched scale, sophistication, and passion to every occasion.
+
             </p>
             <div className="mt-6 hidden lg:block">
   <Link href="/Form">

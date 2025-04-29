@@ -17,9 +17,8 @@ const Intro= () => {
         {/* Right Section: Description */}
         <div className="w-full md:w-1/2">
           <p className="text-lg md:text-lg font-normal text-justify text-white">
-            This podcast offers you an insight about the host Abdullah and his
-            struggles to achieve what is now by measures the most immaculate
-            form of success. Join Abdullah Ghaffar as he engages with the brightest minds in the real estate industry! Discover actionable tips, inspiring stories, and insider knowledge from top performers and experts in real estate investing and raising capital.
+          For over two decades, NM Company has been a cornerstone of Hyderabad’s event industry, evolving from a modest production house into Telangana’s premier event powerhouse with one of the largest inventories in the region. Our legacy is built on trust, creativity, and flawless execution, making us the preferred choice for iconic weddings and grand celebrations.
+
           </p>
         </div>
       </div>

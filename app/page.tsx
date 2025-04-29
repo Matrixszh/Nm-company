@@ -3,8 +3,8 @@ import Form from "@/components/Form";
 import Testimonials from "@/components/Testimonials";
 import Loans from "../components/Loans";
 import NavBar from "../components/Navbar";
-import ProgressBar from "../components/Progress";
-import { SpecialityComponent } from "../components/SpecialityComponent";
+import {Services} from "../components/Services";
+import {SpecialityComponent} from "../components/SpecialityComponent";
 import Teams from "../components/Team";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -293,7 +293,7 @@ export default function Home() {
         </p>
 
 
-        <ProgressBar />
+        <Services />
         
       </section>
 
