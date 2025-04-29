@@ -4,7 +4,7 @@ const MarqueeText : React.FC = () => {
 
   return (
 
-      <div className="overflow-hidden bg-transparent py-12">
+      <div className="overflow-hidden bg-transparent py-1 lg:py-12">
         <div className="flex animate-marquee whitespace-nowrap">
           {Array(20)
             .fill(0)
