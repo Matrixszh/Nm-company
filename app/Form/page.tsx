@@ -1,29 +1,11 @@
 "use client";
-import Form from "@/components/Form";
-import Testimonials from "@/components/Testimonials";
-import Loans from "@/components/Loans";
 import NavBar from "@/components/Navbar";
-import ProgressBar from "@/components/Progress";
-import { SpecialityComponent } from "@/components/SpecialityComponent";
-import Teams from "@/components/Team";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
-import Image from "next/image";
 import LogoSlider from "@/components/LogoSlider";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-} from "@/components/ui/card";
 import { Footer } from "@/components/Footer";
-import IntroCarousel from "@/components/IntroCarousel";
-import Link from "next/link";
-import { AboutUs } from "@/components/AboutUs";
-import ConveyorBelt from "@/components/Conveyerbelt";
-import ServicesSection from "@/components/ServiceSection";
 import AppointmentForm from "./AppointmentForm";
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
