@@ -26,6 +26,7 @@ import ConveyorBelt from "@/components/Conveyerbelt";
 import ServicesSection from "@/components/ServiceSection";
 import router from "next/router";
 import MarqueeText from "@/components/MarqueeText";
+import AccordionInfo from "@/components/AccordianInfo";
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -371,7 +372,24 @@ export default function Home() {
         </p>
         <Testimonials/>
       </section>
+      <section
+        className="relative  flex flex-col items-center text-white mt-16 justify-center"
+        id="form_sec"
+      >
+        <div className="mb-4">
+          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
+            CLIENTALE
+          </span>
+        </div>
+        <h2
+          className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
+          id="form_heading"
+        >
+          Our Clients
+        </h2>
+      </section>
       
+      <AccordionInfo />      
       <section
         className="relative  flex flex-col items-center text-white mt-16 justify-center"
         id="form_sec"
