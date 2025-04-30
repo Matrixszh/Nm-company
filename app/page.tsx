@@ -378,17 +378,16 @@ export default function Home() {
       >
         <div className="mb-4">
           <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
-            CLIENTALE
+            INQUIRIES
           </span>
         </div>
         <h2
           className="text-3xl text-white md:text-5xl font-regular mt-6 mb-4 text-center"
           id="form_heading"
         >
-          Our Clients
+          FAQ's
         </h2>
       </section>
-      
       <AccordionInfo />      
       <section
         className="relative  flex flex-col items-center text-white mt-16 justify-center"
