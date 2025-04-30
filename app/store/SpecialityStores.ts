@@ -15,8 +15,8 @@ export const SpecialityStore = new Store({
   buttonData: {
     Trust: {
       title: "Decades of Trust",
-      description: "Two Decades of Trust, Now with Next-Gen Innovation Legacy Meets Fresh Vision: With 20+ years as Hyderabad’s event pioneers, we combine time-tested expertise with a new wave of talent trained under India’s top event giants (Wizcraft, TWS). Best of Both Worlds: Clients get the reliability of an established brand and the bold, contemporary creativity of a modern decor & planning team.",
-      content: "Two Decades of Trust, Now with Next-Gen Innovation Legacy Meets Fresh Vision: With 20+ years as Hyderabad’s event pioneers, we combine time-tested expertise with a new wave of talent trained under India’s top event giants (Wizcraft, TWS). Best of Both Worlds: Clients get the reliability of an established brand and the bold, contemporary creativity of a modern decor & planning team.",
+      description: "Two Decades of Trust, Now with Next-Gen Innovation Legacy Meets Fresh Vision: With 20+ years as Hyderabad’s event pioneers, we combine time-tested expertise with a new wave of talent trained under India’s top event giants (Wizcraft, TWS).",
+      content: "Two Decades of Trust, Now with Next-Gen Innovation Legacy Meets Fresh Vision: With 20+ years as Hyderabad’s event pioneers, we combine time-tested expertise with a new wave of talent trained under India’s top event giants (Wizcraft, TWS).",
       footer: "Footer information for Button 1",
       image: "/img3.jpg",
     },
