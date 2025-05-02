@@ -18,22 +18,11 @@ export const projects = [
       image: "/project.png",
     },
     {
-      heading: "Fintech and Finance",
+      heading: "Can you assist with events in different locations or destination weddings?",
       description:
-        "studio envious. Using OpenAI and ElevenLabs wasn’t financially sustainable given their game’s unexpected popularity and replayability. What’s more, Playroom (part of Little Umbrella) experienced significant issues with AI latenc",
+        "Yes! We plan destination weddings/ Events and handle logistics like travel, permits, and local vendor coordination.",
       image: "/project.png",
     },
-    {
-      heading: "Fintech and Finance",
-      description:
-        "studio envious. Using OpenAI and ElevenLabs wasn’t financially sustainable given their game’s unexpected popularity and replayability. What’s more, Playroom (part of Little Umbrella) experienced significant issues with AI latenc",
-      image: "/project.png",
-    },
-    {
-      heading: "Fintech and Finance",
-      description:
-        "studio envious. Using OpenAI and ElevenLabs wasn’t financially sustainable given their game’s unexpected popularity and replayability. What’s more, Playroom (part of Little Umbrella) experienced significant issues with AI latenc",
-      image: "/project.png",
-    },
+    
   ];
   
