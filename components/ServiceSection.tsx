@@ -1,17 +1,16 @@
 'use client';
 import React, { useState, useRef } from 'react';
 import Image from 'next/image';
-import bath from '@/public/img3.jpg';
-import renovation from '@/public/img1.jpg';
-import consultation from '@/public/img2.jpg';
+import award1 from '@/public/award1.jpg';
+import award2 from '@/public/award2.jpg';
+import award3 from '@/public/award3.jpg';
 import kitchen from '@/public/img3.jpg';
 import { motion, useInView } from 'framer-motion';
 
 const services = [
-  { name: 'Kitchen Remodelling', description: 'Kitchen design & décor services. ', image: kitchen },
-  { name: 'Bathroom Remodelling', description: 'Design, Acessories and Lighting.', image: bath },
-  { name: 'Consultation', description: 'Expert design advice & guidance.', image: consultation },
-  { name: 'Renovations', description: 'Design coordination & execution.', image: renovation },
+  { name: 'TCEI presents gem of India', description: 'best tent solutions', image: award3 },
+  { name: 'TCEI presents pearl of hyd', description: 'best decor and tent', image: award2 },
+  { name: 'Event Excellence Award', description: 'Fascilitator Of Government Events', image: award1 },
 ];
 
 const ServicesSection = () => {

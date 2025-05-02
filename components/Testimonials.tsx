@@ -13,35 +13,35 @@ import ReactCardFlip from "react-card-flip";
 const Testimonials = () => {
   const testimonials = [
     {
-      title: "Rehab Loan",
-      description: "Quick funding for property renovation. ",
+      title: "Wedding",
+      description: "Very Professional And Freindly",
       backDescription:
-        "I found a distressed property in a prime location, but I lacked the funds for renovation. Creative Funding for help, and they provided me with a Rehab Loan that covered both the purchase and the renovation.",
-      badge: "Adam M",
+        "Thank you very much to M/s NM Events for organizing everything to our satisfaction in my cousin sister wedding.They are very professional and more than friendly.They performed beyond our expectation.They have taken utmost care of the smallest of the small things and have arranged everything which we have asked on the spot within seconds. Beautiful decoration .",
+      badge: "Yash",
       image: "/img1.jpg",
     },
     {
-      title: "DCSR Loan",
-      description: "Fast, flexible financing for rentals.",
+      title: "Tent House",
+      description: "Wonderful Decorations And Food",
       backDescription:
-        "I wanted to expand my rental portfolio and needed a reliable financing option. Creative Funding offered me a DSCR Rental Loan, which enabled me to purchase a new rental property. The loan terms were flexible, and the approval process was fast.",
-      badge: "Karl T",
+        "Nm Company done order in my relative function with complete event with tent house to catering services. He done event so wonderful flower decorations and so tasty items. I am very happy with her services. I appreciate him for he done wonderful arrangements.",
+      badge: "Rajesh",
       image: "/img2.jpg",
     },
     {
-      title: "Rehab Loan",
-      description: "Financed renovations for community revitalization.",
+      title: "Wedding",
+      description: "Incredible Management and Catering ",
       backDescription:
-        "I purchased an old, run-down property with the vision of revitalizing it and improving the local community. With a Rehab Loan, I was able to finance extensive renovations.",
-      badge: "Maria S",
+        "I would Like to thank you N.M Company for the wonderful food you prepared and served on our wedding day. i had many appreciations our guest they told to me nice food you will arranged food was tasty and spicy everyone are liked thank you and your team incredible catering at the wedding thank you so much once again.",
+      badge: "Anand",
       image: "/img3.jpg",
     },
     {
-      title: "Bridge Loan",
-      description: "Immediate funding ",
+      title: "Event",
+      description: "Brilliant management",
       backDescription:
-        "When I came across a prime investment opportunity, I knew I had to act fast. However, my capital was tied up in another property that hadn't sold yet. Creative Funding came through with a Bridge Loan that gave me the immediate funds I needed.",
-      badge: "Michael W",
+        "The management seems very understanding and friendly.Everyone loved the stage. Thanks a lot !",
+      badge: "Jawad",
       image: "/img1.jpg",
     },
   ];
