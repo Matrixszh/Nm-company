@@ -259,7 +259,7 @@ export default function Home() {
       </section>
       <MarqueeText/>
       <section
-        className="min-h-screen relative flex flex-col justify-center items-center my-1 -mt-[30vh] lg:my-16 lg:mb-[20vh] mb-[5vh] "
+        className="min-h-screen relative flex flex-col justify-center items-center my-1 -mt-[30vh] lg:my-16 lg:mb-[20vh] mb-[20vh] "
         id="process_sec"
       >
         
