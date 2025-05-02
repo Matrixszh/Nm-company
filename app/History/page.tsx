@@ -5,7 +5,6 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
-import Image from "next/image";
 import LogoSlider from "@/components/LogoSlider";
 import { Footer } from "@/components/Footer";
 import Link from "next/link";
