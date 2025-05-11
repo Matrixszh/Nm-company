@@ -8,7 +8,7 @@ export const projects = [
     {
       heading: "How soon should I book your services for my wedding?",
       description:
-        "For local weddings, 2-5 months in advance is ideal; for peak seasons or destination weddings, 6-8 months would be ideal.",
+        "For local weddings, 2-3 months in advance is ideal; for peak seasons or destination weddings, 6-8 months would be ideal.",
       image: "/project.png",
     },
     {

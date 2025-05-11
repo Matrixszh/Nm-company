@@ -15,6 +15,7 @@ import ConveyorBelt from "@/components/Conveyerbelt";
 import ServicesSection from "@/components/ServiceSection";
 import MarqueeText from "@/components/MarqueeText";
 import AccordionInfo from "@/components/AccordianInfo";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -358,7 +359,7 @@ export default function Home() {
         >
           Discover why we're the trusted choice for your Supplying needs
         </p>
-        <Testimonials/>
+        <TestimonialCarousel/>
       </section>
       <section
         className="relative  flex flex-col items-center text-white mt-16 justify-center"
