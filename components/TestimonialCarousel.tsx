@@ -73,11 +73,11 @@ const TestimonialCarousel: React.FC = () => {
 
   return (
     <div className="bg-transparent pt-4 sm:pt-4 md:pt-10 px-4 sm:px-6 md:px-8">
-      <div className="w-full mx-auto">
+      <div className=" mx-auto">
        
 
         {/* Carousel */}
-        <div className="w-[200vh] relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-2xl mb-10">
+        <div className="w-[60vh] md:w-[200vh] relative h-[400px]  md:h-[500px] lg:h-[600px] overflow-hidden rounded-2xl mb-10">
           <div className="absolute inset-0 flex items-center justify-center rounded-2xl">
             {testimonials.map((testimonial, index) => (
               <div
