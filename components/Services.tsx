@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Grid } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/grid";
 
 import {
   FaRegLightbulb,
@@ -22,58 +23,48 @@ gsap.registerPlugin(ScrollTrigger);
 const cardData = [
   {
     id: 1,
-    icon: <FaRegLightbulb size={40} />, // Concept Planning
+    icon: <FaRegLightbulb size={30} />, // Concept Planning
     title: "Concept Planning",
-    description: "We help bring your vision to life with detailed planning and creative direction.",
   },
   {
     id: 2,
-    icon: <FaClipboardCheck size={40} />, // Vendor Management
+    icon: <FaClipboardCheck size={30} />, // Vendor Management
     title: "Vendor Management",
-    description: "We coordinate and manage all vendor bookings to ensure a seamless experience.",
   },
   {
     id: 3,
-    icon: <FaMusic size={40} />, // Artist & Entertainment
+    icon: <FaMusic size={30} />, // Artist & Entertainment
     title: "Artist & Entertainment",
-    description: "From DJs to live bands, we handle all your entertainment needs.",
   },
   {
     id: 4,
-    icon: <FaPaintBrush size={40} />, // Decor & Styling
+    icon: <FaPaintBrush size={30} />, // Decor & Styling
     title: "Decor & Styling",
-    description: "Elegant setups, floral arrangements, and themed styling done to perfection.",
   },
   {
     id: 5,
-    icon: <FaEnvelopeOpenText size={40} />, // Invite/E-invite
+    icon: <FaEnvelopeOpenText size={30} />, // Invite/E-invite
     title: "Invite / E-invite",
-    description: "Custom-designed printed and digital invites that reflect your event's essence.",
   },
   {
     id: 6,
-    icon: <FaUtensils size={40} />, // Catering
+    icon: <FaUtensils size={30} />, // Catering
     title: "Catering",
-    description: "A range of delicious cuisines curated to satisfy every palate.",
   },
   {
     id: 7,
-    icon: <FaCameraRetro size={40} />, // Photography/Videography
+    icon: <FaCameraRetro size={30} />, // Photography/Videography
     title: "Photography & Videography",
-    description: "Capturing your moments with creativity and clarity for lasting memories.",
   },
 ];
-
 
 const Card = ({
   icon,
   title,
-  description,
   index,
 }: {
   icon: any;
   title: string;
-  description: string;
   index: number;
 }) => {
   const cardRef = useRef(null);
@@ -83,20 +74,20 @@ const Card = ({
     gsap.set(card, {
       clipPath: "inset(0 0 100% 0)",
       opacity: 0,
-      y: 50,
+      y: 20,
     });
 
     ScrollTrigger.create({
       trigger: card,
-      start: "top 80%",
+      start: "top 90%",
       onEnter: () => {
         gsap.to(card, {
           clipPath: "inset(0 0 0% 0)",
           opacity: 1,
           y: 0,
-          duration: 1.3,
-          delay: index * 0.3,
-          ease: "power3.out",
+          duration: 0.8,
+          delay: index * 0.1,
+          ease: "power2.out",
         });
       },
       once: true,
@@ -106,11 +97,10 @@ const Card = ({
   return (
     <div
       ref={cardRef}
-      className="w-full bg-[#004692] p-10 rounded-md text-center text-white h-[400px] flex flex-col items-center justify-start gap-6"
+      className="w-full bg-none p-4  text-center text-white h-36 flex flex-col items-center justify-center gap-3"
     >
-      <div className="bg-[#FF8B00] rounded-full p-4 inline-block">{icon}</div>
-      <h3 className="text-2xl font-bold">{title}</h3>
-      <p>{description}</p>
+      <div className="bg-[#FF8B00] rounded-full p-3 inline-block">{icon}</div>
+      <h3 className="text-lg font-bold">{title}</h3>
     </div>
   );
 };
@@ -118,40 +108,42 @@ const Card = ({
 export const Services = () => {
   return (
     <div className="w-full py-10 flex flex-col items-center">
-      {/* Desktop - Grid Layout */}
-      <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:p-4 w-full">
+      {/* Desktop - Grid Layout (4 in a row) */}
+      <div className="hidden lg:grid grid-cols-4 gap-4 px-4 md:p-4 w-full">
         {cardData.map((card, index) => (
           <Card 
             key={card.id} 
             icon={card.icon} 
-            title={card.title} 
-            description={card.description}
+            title={card.title}
+            index={index}
+          />
+        ))}
+      </div>
+      
+      {/* Tablet - Grid Layout (3 in a row) */}
+      <div className="hidden md:grid lg:hidden grid-cols-3 gap-4 px-4 md:p-4 w-full">
+        {cardData.map((card, index) => (
+          <Card 
+            key={card.id} 
+            icon={card.icon} 
+            title={card.title}
             index={index}
           />
         ))}
       </div>
 
-
-      {/* Mobile - Swiper Carousel */}
-      <div className="md:hidden w-full px-4 h-[5vh] -mb-[50vh]">
-        <Swiper
-          modules={[Autoplay, Pagination]}
-          spaceBetween={20}
-          slidesPerView={1}
-          autoplay={{ delay: 2000 }}
-          pagination={{ clickable: true }}
-        >
-          {cardData.map((card, index) => (
-            <SwiperSlide key={card.id}>
-              <Card
-                icon={card.icon}
-                title={card.title}
-                description={card.description}
-                index={index}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      {/* Mobile - Grid Layout (3 in a row) */}
+      <div className="grid md:hidden grid-cols-2 gap-2 px-2 w-full">
+        {cardData.map((card, index) => (
+          <div key={card.id} className="h-24">
+            <div className=" rounded-md text-center text-white h-full flex flex-col items-center justify-center p-1">
+              <div className="bg-[#FF8B00] rounded-full p-2 inline-block mb-1">
+                {React.cloneElement(card.icon, { size: 30 })}
+              </div>
+              <h3 className="p-2 text-sm font-medium ">{card.title}</h3>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

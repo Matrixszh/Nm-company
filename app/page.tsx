@@ -260,7 +260,7 @@ export default function Home() {
       </section>
       <MarqueeText/>
       <section
-        className="min-h-screen relative flex flex-col justify-center items-center my-1 -mt-[30vh] lg:my-16 lg:mb-[20vh] mb-[20vh] "
+        className="min-h-screen relative flex flex-col justify-center items-center my-1 mt-[5vh] lg:my-16 lg:mb-[20vh] mb-[20vh] "
         id="process_sec"
       >
         
@@ -289,7 +289,7 @@ export default function Home() {
 
 
       <section
-        className="relative flex flex-col items-center text-white mt-11"
+        className="relative flex flex-col items-center text-white -mt-[10vh]"
         id="team_sec"
       >
          <div className="mb-4">

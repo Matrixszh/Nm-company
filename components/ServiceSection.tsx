@@ -4,7 +4,6 @@ import Image from 'next/image';
 import award1 from '@/public/award1.jpg';
 import award2 from '@/public/award2.jpg';
 import award3 from '@/public/award3.jpg';
-import kitchen from '@/public/img3.jpg';
 import { motion, useInView } from 'framer-motion';
 
 const services = [
