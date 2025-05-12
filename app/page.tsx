@@ -174,18 +174,7 @@ export default function Home() {
         <NavBar/>
           {/* Single video for both mobile and desktop */}
           <video
-            className="absolute top-0 left-0 w-full h-full object-cover opacity-40 hidden md:block"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="none"
-          >
-            <source src="/bg.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <video
-            className="absolute top-0 left-0 w-full h-full object-cover opacity-40 md:hidden"
+            className="absolute top-0 left-0 w-full h-full object-cover opacity-40  "
             autoPlay
             loop
             muted
