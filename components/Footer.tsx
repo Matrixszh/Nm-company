@@ -34,29 +34,14 @@ export const Footer = () => {
           {/* Right Section - Social Icons */}
           <div className="flex gap-6 items-center">
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/nm__company/"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
             >
               <FaInstagram className="text-2xl hover:text-[#F3831C]" />
             </a>
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Facebook Group"
-            >
-              <FaFacebook className="text-2xl hover:text-[#F3831C]" />
-            </a>
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="YouTube"
-            >
-              <FaYoutube className="text-2xl hover:text-[#F3831C]" />
-            </a>
+            
             <a
               href="https://www.linkedin.com/"
               target="_blank"
@@ -65,14 +50,7 @@ export const Footer = () => {
             >
               <FaLinkedin className="text-2xl hover:text-[#F3831C]" />
             </a>
-            <a
-              href="https://www.tiktok.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="TikTok"
-            >
-              <FaTiktok className="text-2xl hover:text-[#F3831C]" />
-            </a>
+            
           </div>
         </div>
 
