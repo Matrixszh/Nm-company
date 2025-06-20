@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { toast, ToastContainer } from "react-toastify";
@@ -10,19 +12,22 @@ type FormFields = {
   email: string;
   description: string;
 };
+
 const AppointmentForm = () => {
-  const template = process.env.NEXT_PUBLIC_TEMPLATE_ID;
-  const service = process.env.NEXT_PUBLIC_SERVICE_ID;
-  const key = process.env.NEXT_PUBLIC_USER_ID;
+  const template = process.env.NEXT_PUBLIC_TEMPLATE_ID!;
+  const service = process.env.NEXT_PUBLIC_SERVICE_ID!;
+  const key = process.env.NEXT_PUBLIC_USER_ID!;
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm({
+  } = useForm<FormFields>({
     defaultValues: {
       name: "",
       number: "",
@@ -32,15 +37,23 @@ const AppointmentForm = () => {
   });
 
   const onSubmit = (data: FormFields) => {
+    // Map data to match EmailJS variables if needed
+    const mappedData = {
+      name: data.name,
+      number: data.number,
+      email: data.email,
+      description: data.description,
+    };
+
     emailjs
-      .send(service!, template!, data, key)
+      .send(service, template, mappedData, key)
       .then((response) => {
         reset();
         console.log("Form data:", data);
         toast.success("Form Submitted Successfully!");
       })
       .catch((error) => {
-        console.error("FAILED...", error);
+        console.error("EmailJS submission error:", error?.text || error);
         toast.error("Form Submission Failed!");
       });
   };
@@ -122,6 +135,9 @@ const AppointmentForm = () => {
           Contact Us
         </button>
       </form>
+
+      {/* Add ToastContainer if not already in a global layout */}
+      <ToastContainer />
     </>
   );
 };

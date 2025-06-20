@@ -5,18 +5,18 @@ import Marquee from "react-fast-marquee";
 const ConveyorBelt = () => {
   const beltOneImages = [
     "/img1.jpg",
-    "/img2.jpg",
+    "/img6.jpeg",
     "/img3.jpg",
-    "/img1.jpg",
-    "/img2.jpg",
+    "/img4.JPG",
+    "/img5.JPG",
   ];
 
   const beltTwoImages = [
+    "/img5.JPG",
+    "/img4.JPG",
+    "/img8.png",
+    "/img7.jpeg",
     "/img1.jpg",
-    "/img3.jpg",
-    "/img1.jpg",
-    "/img3.jpg",
-    "/img2.jpg",
   ];
 
   // Triple the images to ensure smooth continuous movement
