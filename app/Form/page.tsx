@@ -152,17 +152,23 @@ export default function Home() {
     { scope: scope }
   );
 
+    const CLOUDINARY_VIDEO_URL =
+    "https://res.cloudinary.com/dldywjxm1/video/upload/v1760455524/bg_-_Made_with_Clipchamp_nitl4v.mp4";
+
   return (
     <div
       ref={scope}
       className="relative min-h-screen bg-cover bg-center overflow-hidden"
-      style={{ backgroundImage: "url('/background.jpg')" }} id="history"
+      style={{ backgroundImage: "url('/background.jpg')" }}
+      id="history"
     >
       <main className="overflow-hidden" ref={scope}>
-      <section className="sticky top-0 z-10 h-screen overflow-hidden bg-black"
-      id="home">
-        <NavBar/>
-          {/* Single video for both mobile and desktop */}
+        <section
+          className="sticky top-0 z-10 h-screen overflow-hidden bg-black"
+          id="home"
+        >
+          <NavBar/>
+          {/* Mobile and desktop video backgrounds, Cloudinary link */}
           <video
             className="absolute top-0 left-0 w-full h-full object-cover opacity-40 hidden md:block"
             autoPlay
@@ -171,7 +177,7 @@ export default function Home() {
             playsInline
             preload="none"
           >
-            <source src="/bg.mp4" type="video/mp4" />
+            <source src={CLOUDINARY_VIDEO_URL} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <video
@@ -182,21 +188,18 @@ export default function Home() {
             playsInline
             preload="none"
           >
-            <source src="/bg.mp4" type="video/mp4" />
+            <source src={CLOUDINARY_VIDEO_URL} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-
           <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[8vh]" >
-          <p className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6" id="intro_main">
-          <span> Get In Touch , </span> Let's Make Your <span className="text-[#F3831C]">Event</span>  Happen
-          </p>
+            <p className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6" id="intro_main">
+              <span> Get In Touch , </span> Let's Make Your <span className="text-[#F3831C]">Event</span>  Happen
+            </p>
             <p className="text-md md:text-lg lg:text-2xl font-regular text-center text-white md:max-w-[80vw] max-w-[90vw]" id="intro_content">
-            Have questions or need a quote? Reach out to our team for expert advice and customized solutions for your next event.
-          </p>
-
-          <div id="intro_button">
-
-          <button
+              Have questions or need a quote? Reach out to our team for expert advice and customized solutions for your next event.
+            </p>
+            <div id="intro_button">
+              <button
                 className="px-6 py-3 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300"
                 onClick={() =>
                   document
@@ -206,7 +209,7 @@ export default function Home() {
               >
                 Contact Us
               </button>
-          </div>
+            </div>
           </div>
         </section>
       </main>

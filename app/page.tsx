@@ -163,6 +163,9 @@ export default function Home() {
     { scope: scope }
   );
 
+    const CLOUDINARY_VIDEO_URL =
+    "https://res.cloudinary.com/dldywjxm1/video/upload/v1760455524/bg_-_Made_with_Clipchamp_nitl4v.mp4";
+
   return (
     <div
       ref={scope}
@@ -170,38 +173,45 @@ export default function Home() {
       style={{ backgroundImage: "url('/background.jpg')" }}
     >
       <main className="overflow-hidden" ref={scope}>
-      <section className="sticky top-0 z-10 h-screen overflow-hidden bg-black"
-      id="home">
-        <NavBar/>
-          {/* Single video for both mobile and desktop */}
+        <section
+          className="sticky top-0 z-10 h-screen overflow-hidden bg-black"
+          id="home"
+        >
+          <NavBar />
+          {/* Cloudinary video background */}
           <video
-            className="absolute top-0 left-0 w-full h-full object-cover opacity-40  "
+            className="absolute top-0 left-0 w-full h-full object-cover opacity-40"
             autoPlay
             loop
             muted
             playsInline
             preload="none"
           >
-            <source src="/bg.mp4" type="video/mp4" />
+            <source src={CLOUDINARY_VIDEO_URL} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
-          <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[8vh]" >
-          <p className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6" id="intro_main">
-          <span> A One Stop </span><span className="text-[#F3831C]">Solution</span>  To All Your Event Needs
-          </p>
-            <p className="text-md md:text-lg lg:text-2xl font-regular text-center text-white md:max-w-[80vw] max-w-[90vw]" id="intro_content">
-            Discover premium event supplies tailored to your needs. From décor to equipment, we provide top-quality resources to bring your vision to life.
-          </p>
-
-          <div id="intro_button">
-
-          <Link href="/Form">
-      <button className="px-6 py-3 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300">
-        Contact Us
-      </button>
-    </Link>
-          </div>
+          <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[8vh]">
+            <p
+              className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6"
+              id="intro_main"
+            >
+              <span> A One Stop </span>
+              <span className="text-[#F3831C]">Solution</span>  To All Your Event Needs
+            </p>
+            <p
+              className="text-md md:text-lg lg:text-2xl font-regular text-center text-white md:max-w-[80vw] max-w-[90vw]"
+              id="intro_content"
+            >
+              Discover premium event supplies tailored to your needs. From décor to equipment, we provide top-quality resources to bring your vision to life.
+            </p>
+            <div id="intro_button">
+              <Link href="/Form">
+                <button className="px-6 py-3 bg-custom-gradient text-white rounded-full shadow-md hover:bg-none hover:text-white border border-1 transition duration-300">
+                  Contact Us
+                </button>
+              </Link>
+            </div>
           </div>
         </section>
       </main>
