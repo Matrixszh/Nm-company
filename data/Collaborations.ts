@@ -12,12 +12,12 @@ export const data = [
   {
     id: 3,
     title: "Collaboration 3",
-    videoUrl: "https://res.cloudinary.com/dldywjxm1/video/upload/v1758281672/nmvid2lc_-_Made_with_Clipchamp_yibo0a.mp4",
+    videoUrl: "https://res.cloudinary.com/dldywjxm1/video/upload/v1760457106/Untitled_video_-_Made_with_Clipchamp_wixgdr.mp4",
   },
   {
     id: 4,
     title: "Collaboration 4",
-    videoUrl: "https://res.cloudinary.com/dldywjxm1/video/upload/v1758281511/nmvid1lc_-_Made_with_Clipchamp_w8twbz.mp4",
+    videoUrl: "https://res.cloudinary.com/dldywjxm1/video/upload/v1760458480/Untitled_video_-_Made_with_Clipchamp_1_najpud.mp4",
   },
   // Add more collaborations here...
 ];
