@@ -19,151 +19,12 @@ import TestimonialCarousel from "@/components/TestimonialCarousel";
 import ScrollCard from "@/components/ScrollCard";
 import { VortexDemo } from "@/components/Vortex";
 import GooeyNav from "@/components/GooeyNav";
+import SpotlightCard from "@/components/SpotlightCard";
+import { FaReact } from 'react-icons/fa';
+import Policy from "@/components/Policy";
 
 export default function Home() {
-  gsap.registerPlugin(ScrollTrigger);
-  const t1 = gsap.timeline();
-  const scope = useRef(null);
-  useGSAP(
-    () => {
-      t1.from("#intro_main", {
-        yPercent: -100,
-        duration: 1.3,
-        opacity: 0,
-        delay: 0.3,
-      })
-        .from("#intro_content", {
-          yPercent: 100,
-          duration: 1.0,
-          opacity: 0,
-          delay: 0.2,
-        })
-        .from("#intro_button", {
-          yPercent: 100,
-          duration: 1.0,
-          opacity: 0,
-          delay: 0.2,
-        });
-
-      // Loan Section Animation
-      gsap.from("#loan_heading", {
-        yPercent: -100,
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: "#loan_sec",
-          start: "-230px center",
-          toggleActions: "play none none reverse",
-        },
-      });
-      gsap.from("#loan_content", {
-        yPercent: 100,
-        opacity: 0,
-        duration: 0.9,
-        scrollTrigger: {
-          trigger: "#loan_sec",
-          start: "top center",
-        },
-      });
-
-      // Process Section Animation
-      gsap.from("#process_heading", {
-        yPercent: -100,
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: "#process_sec",
-          start: "-230px center",
-          toggleActions: "play none none reverse",
-        },
-      });
-      gsap.from("#process_content", {
-        yPercent: 100,
-        opacity: 0,
-        duration: 0.9,
-        scrollTrigger: {
-          trigger: "#process_sec",
-          start: "top center",
-        },
-      });
-
-      // Team Section Animation
-      gsap.from("#team_content", {
-        yPercent: -100,
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: "#team_sec",
-          start: "-230px center",
-          toggleActions: "play none none reverse",
-        },
-      });
-
-      // Speciality Section Animation
-      gsap.from("#speciality_heading", {
-        yPercent: -100,
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: "#speciality_sec",
-          start: "-230px center",
-          toggleActions: "play none none reverse",
-        },
-      });
-      gsap.from("#speciality_content", {
-        yPercent: 100,
-        opacity: 0,
-        duration: 0.9,
-        scrollTrigger: {
-          trigger: "#speciality_sec",
-          start: "top center",
-        },
-      });
-
-      // Testimonial Section Animation
-      gsap.from("#testimonial_heading", {
-        yPercent: -100,
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: "#testimonial_sec",
-          start: "-230px center",
-          toggleActions: "play none none reverse",
-        },
-      });
-      gsap.from("#testmonial_content", {
-        yPercent: 100,
-        opacity: 0,
-        duration: 0.9,
-        scrollTrigger: {
-          trigger: "#testimonial_sec",
-          start: "top center",
-        },
-      });
-
-      // Form Section Animation
-      gsap.from("#form_heading", {
-        yPercent: -100,
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: "#form_sec",
-          start: "-230px center",
-          toggleActions: "play none none reverse",
-        },
-      });
-      gsap.from("#form_section", {
-        yPercent: 100,
-        opacity: 0,
-        duration: 0.9,
-        scrollTrigger: {
-          trigger: "#form_sec",
-          start: "top center",
-        },
-      });
-    },
-    { scope: scope }
-  );
+ 
 const items = [
   { label: "Home", href: "/" },
   { label: "History", href: "/History" },
@@ -194,29 +55,12 @@ const items = [
       </section>
 
       <section
-        className="relative  flex flex-col items-center text-white my-16 "
+        className="relativeflex flex-row items-center text-white my-16 "
         id="speciality_sec"
       >
-        <div className="mb-4">
-          <span className="text-sm px-6 py-2 bg-none text-white rounded-full border border-2">
-            PRIORITIES
-          </span>
-        </div>
-        <h2
-          className="text-3xl md:text-5xl font-regular mt-6 mb-4 text-center"
-          id="speciality_heading"
-        >
-          Why Choose Us
-        </h2>
-        <p
-          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
-          id="speciality_content"
-        >
-          Reliable, high-quality, and tailored to your needs—discover why event organizers trust us for seamless and stress-free event resource solutions.
-        </p>
-        <SpecialityComponent />
+        <Policy/>
       </section>
-      <MarqueeText/>
+
       <section
         className="min-h-screen relative flex flex-col justify-center items-center my-1 mt-[5vh] lg:my-16 lg:mb-[20vh] mb-[20vh] "
         id="process_sec"
