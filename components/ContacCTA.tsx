@@ -20,7 +20,7 @@ const TeamSection = () => {
           
           {/* Right side - Content */}
           <div className="bg-none p-12 flex flex-col justify-center">
-            <h1 className="text-5xl font-medium text-white mb-4 ">
+            <h1 className="text-5xl font-light text-white mb-4 ">
               Can't get enough and want the full tour?
             </h1>
             <p className="text-gray-100 mb-8 text-lg">
