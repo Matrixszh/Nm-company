@@ -26,6 +26,9 @@ import { FocusCardsDemo } from "@/components/FocusCards";
 import ContactCTA from "@/components/ContacCTA";
 import { TabsDemo } from "@/components/GlowingEffect";
 import ExpandableProjectsSection from "@/components/ExpandableProjectsSection";
+import Footer2 from "@/components/Footer2";
+import  ScrollVelocity  from "@/components/ScrollVelocity";
+import AccordionInfo2 from "@/components/AccordianInfo2";
 
 export default function Home() {
  
@@ -91,6 +94,7 @@ const items = [
       >
          <ContactCTA/>
       </section>
+
       <section
         className="min-h-[150vh] relative bg-[#A75E80]/20 flex flex-col justify-center items-center  "
         id="process_sec"
@@ -115,7 +119,24 @@ const items = [
         
         <ExpandableProjectsSection/>
       </section>
+       <section
+        className="relative bg-[#A75E80]/20 flex flex-col items-center text-white mt-16 justify-center"
+        id="form_sec"
+      >
+        <div className="py-4 text-center">
+          <h2 className="mt-6 text-4xl font-medium text-gray-800 mb-4">
+            Our <span className=" font-light text-[#A75E80]">FAQs</span>
+          </h2>
+          <p className="text-gray-600 max-w-2xl px-4 mx-auto text-lg">
+            We are committed to these core principles that guide every aspect of our work and ensure exceptional results for our clients.
+          </p>
+        </div>
+        
+      <AccordionInfo2 />  
+      </section> 
 
+
+<Footer2/>
         
     </div>
   );
