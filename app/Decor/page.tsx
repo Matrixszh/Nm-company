@@ -72,10 +72,10 @@ const items = [
       >
         {/* Header */}
         <div className="text-center">
-          <h2 className="mt-6 text-4xl font-medium text-gray-800 mb-4">
+          <h2 className="px-4 mt-6 text-4xl font-medium text-gray-800 mb-4">
             Our <span className=" font-light text-[#A75E80]">Standouts</span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-600 max-w-2xl mx-auto px-4 text-lg">
             We are committed to these core principles that guide every aspect of our work and ensure exceptional results for our clients.
           </p>
         </div>
@@ -100,7 +100,7 @@ const items = [
           <h2 className="mt-6 text-4xl font-medium text-gray-800 mb-4">
             Our <span className=" font-light text-[#A75E80]">Standouts</span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-600 max-w-2xl px-4 mx-auto text-lg">
             We are committed to these core principles that guide every aspect of our work and ensure exceptional results for our clients.
           </p>
         </div>
